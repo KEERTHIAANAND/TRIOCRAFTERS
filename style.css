@@ -1,3 +1,4 @@
+/*Basic Style */ 
 * {
     margin: 0;
     padding: 0;
@@ -35,4 +36,8 @@ p {
 
 body {
     width: 100%;
+}
+/*Style for header*/
+/*Style for hero section*/
+#hero{
 }
