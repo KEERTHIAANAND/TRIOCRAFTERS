@@ -40,5 +40,7 @@ body {
 /*Style for header*/
 /*Style for hero section*/
 #hero{
-    
+    background-image: url("assets/hero.png");
+   border-radius: 4%;
+   
 }
