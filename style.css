@@ -33,7 +33,8 @@ p {
   color: #465b52;
   margin: 15px 0 20px 0;
 }
-#hero img{
+
+#hero img {
   border-radius: 20%;
 }
 
@@ -42,44 +43,65 @@ body {
   font-family: 'Times New Roman', Times, serif;
   background-color: rgb(255, 255, 255);
 }
+
 /*Style for header*/
 /*Style for hero section*/
-#hero{
-  display:flex;
+#hero {
+  display: flex;
   justify-content: space-between;
   margin: 2%;
   background-color: rgb(162, 201, 211);
   position: static;
 }
-#hero #text{
+
+#hero #text {
   padding-left: 5%;
   padding-top: 4%;
 }
-#text h1,h3,h4,p,button{
+
+#text h1,
+h3,
+h4,
+p,
+button {
   padding: 10px;
-  font-weight:50px;
+  font-weight: 50px;
   font-size: xx-large;
 }
-#text button{
-  position:absolute;
-  right:77%;
+
+#text button {
+  position: absolute;
+  right: 77%;
 }
+
 /*style for Feature section*/
-.section1{
+.section1 {
   padding: 40px 80px;
   background-color: aliceblue;
 }
-#feature .feature-box{
+
+#feature .feature-box {
   width: 250px;
   text-align: center;
   padding: 25px 15px;
   box-shadow: 20px 20px 34px rgb(124, 147, 153);
-  border:1px solid;
+  border: 1px solid;
   border-radius: 4px;
-  margin:15px 0;
+  margin: 15px;
 }
-#feature h6{
+#feature img{
+  margin-bottom: 10px;
+}
+
+#feature h6 {
   font-size: 100%;
   font-weight: bolder;
-
+  background-color: bisque;
+  display: inline-block;
+}
+#feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
