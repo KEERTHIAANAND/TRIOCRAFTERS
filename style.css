@@ -36,6 +36,7 @@ p {
 
 body {
   width: 100%;
+  font-family: 'Times New Roman', Times, serif;
 }
 /*Style for header*/
 /*Style for hero section*/
@@ -45,7 +46,7 @@ body {
   margin: 2%;
 }
 #hero #text{
-  padding-left: 10%;
+  padding-left: 5%;
   padding-top: 4%;
 }
 #text h1,h3,h4,p,button{
@@ -56,4 +57,8 @@ body {
 #text button{
   position:absolute;
   right:77%;
+}
+/*style for Feature section*/
+.section1{
+  padding: 40px 80px;
 }
