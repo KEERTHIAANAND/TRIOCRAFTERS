@@ -33,10 +33,14 @@ p {
   color: #465b52;
   margin: 15px 0 20px 0;
 }
+#hero img{
+  border-radius: 20%;
+}
 
 body {
   width: 100%;
   font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(255, 255, 255);
 }
 /*Style for header*/
 /*Style for hero section*/
@@ -44,6 +48,8 @@ body {
   display:flex;
   justify-content: space-between;
   margin: 2%;
+  background-color: rgb(162, 201, 211);
+  position: static;
 }
 #hero #text{
   padding-left: 5%;
@@ -61,4 +67,19 @@ body {
 /*style for Feature section*/
 .section1{
   padding: 40px 80px;
+  background-color: aliceblue;
+}
+#feature .feature-box{
+  width: 250px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgb(124, 147, 153);
+  border:1px solid;
+  border-radius: 4px;
+  margin:15px 0;
+}
+#feature h6{
+  font-size: 100%;
+  font-weight: bolder;
+
 }
