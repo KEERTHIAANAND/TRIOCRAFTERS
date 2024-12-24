@@ -40,8 +40,8 @@ p {
 
 body {
   width: 100%;
-  font-family: 'Times New Roman', Times, serif;
-  background-color: rgb(255, 255, 255);
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(6, 255, 226);
 }
 
 /*Style for header*/
@@ -50,7 +50,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 2%;
-  background-color: rgb(162, 201, 211);
+  background-color: aliceblue;
   position: static;
 }
 
@@ -77,7 +77,6 @@ button {
 /*style for Feature section*/
 .section1 {
   padding: 40px 80px;
-  background-color: aliceblue;
 }
 
 #feature .feature-box {
@@ -88,8 +87,10 @@ button {
   border: 1px solid;
   border-radius: 4px;
   margin: 15px;
+  background-color: rgb(126, 120, 111);
 }
-#feature img{
+
+#feature img {
   margin-bottom: 10px;
 }
 
@@ -99,9 +100,13 @@ button {
   background-color: bisque;
   display: inline-block;
 }
-#feature{
+
+#feature {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+#feature .feature-box:hover{
+  box-shadow: 10px 10px 54px rgb(153, 181, 188);
 }
