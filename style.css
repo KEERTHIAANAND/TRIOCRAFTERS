@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-size: xx-large;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -40,7 +41,6 @@ p {
 
 body {
   width: 100%;
-  font-family: "Times New Roman", Times, serif;
   background-color: rgb(6, 255, 226);
 }
 
@@ -72,6 +72,7 @@ body {
   font-weight: 600;
   color:#1a1a1a;
   transition: 0.3s ease; 
+  font-size: 25px;
 }
 
 #navbar li a:hover,
@@ -116,6 +117,9 @@ button {
 #text button {
   position: absolute;
   right: 77%;
+}
+.logo{
+  border-radius: 25px;
 }
 
 /*style for Feature section*/
