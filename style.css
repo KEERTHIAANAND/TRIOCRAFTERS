@@ -12,7 +12,7 @@
 
 body {
   width: 100%;
-  background-color: #2e9790;
+  background: linear-gradient(to top right, #669999 0%, #666699 100%);
 }
 
 /*Style for header*/
@@ -85,9 +85,8 @@ body {
 #text h1,
 h3,
 h4,
-p,
 button {
-  padding: 10px;
+  padding: 70px;
   font-weight: bolder;
   font-size: 45px;
 }
@@ -323,4 +322,35 @@ footer .social-icons {
   margin-top: 20px;
   font-size: 14px;
   color: #777;
+}
+
+/* shop page style*/
+#page-header{
+  background-image: url("assets/shop\ banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+  color: black;
+}
+
+#pagination{
+  text-align: center;
+}
+
+#pagination a{
+  text-decoration: none;
+  background-color: darkcyan;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
 }
