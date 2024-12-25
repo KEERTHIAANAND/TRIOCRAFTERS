@@ -3,36 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 25px;
-  font-family: "Times New Roman", Times, serif;
-}
-
-h1 {
-  font-size: 40px;
-  line-height: 54px;
-  color: #222;
-}
-
-h2 {
-  font-size: 50px;
-  line-height: 64px;
-  color: #222;
-}
-
-h4 {
-  font-size: 20px;
-  color: #222;
-}
-
-h6 {
-  font-size: 12px;
-  font-weight: 700;
-}
-
-p {
-  font-size: 16px;
-  color: #465b52;
-  margin: 15px 0 20px 0;
+  font-size: 23px;
 }
 
 #hero img {
@@ -192,7 +163,7 @@ button {
   transition: 0.2s ease;
   position: relative;
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .product-container :hover {
@@ -231,4 +202,47 @@ button {
   justify-content: space-between;
   padding: 20px;
   flex-wrap: wrap;
+}
+
+#newsletter {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #1e6a6b;
+  height: 25vh;
+  text-align: center;
+  margin: 3%;
+}
+
+#newsletter p,
+button {
+  font-size: larger;
+  color: white;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+#newsletter button {
+  background-color: #0c8a82;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
