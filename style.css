@@ -195,7 +195,7 @@ button {
   margin-bottom: 10%;
 }
 
-.product-container .product :hover {
+.product-container :hover {
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.15);
 }
 
