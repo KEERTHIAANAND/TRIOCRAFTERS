@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f9f9f9;
             color: #333;
         }
 
         .hero {
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?contact,office');
+            background: linear-gradient(to bottom,
+                    rgba(0, 0, 0, 0.6),
+                    rgba(0, 0, 0, 0.6)),
+                url("https://source.unsplash.com/1600x900/?contact,office");
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -57,7 +61,7 @@
 
         .contact-card i {
             font-size: 2em;
-            color: #007BFF;
+            color: #007bff;
             margin-bottom: 10px;
         }
 
@@ -71,10 +75,9 @@
             cursor: pointer;
         }
 
-        .contact-card p:hover{
-            
-            color:rgb(255, 0, 0);
-           }
+        .contact-card p:hover {
+            color: rgb(255, 0, 0);
+        }
 
         .form-section {
             background: #ffffff;
@@ -97,10 +100,10 @@
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
-            
         }
 
-        .form-group input, .form-group textarea {
+        .form-group input,
+        .form-group textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -110,7 +113,7 @@
         .form-group button {
             width: 100%;
             padding: 10px;
-            background-color: #007BFF;
+            background-color: #007bff;
             color: white;
             border: none;
             border-radius: 4px;
@@ -126,11 +129,12 @@
             text-align: center;
             padding: 20px;
             background-color: #333;
-            color:white;
+            color: white;
             margin-top: 40px;
         }
     </style>
 </head>
+
 <body>
     <div class="hero">
         <div>
@@ -163,11 +167,11 @@
             <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required />
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required />
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
@@ -180,10 +184,9 @@
         </div>
     </div>
 
-    <footer>
-        &copy; 2024 Your Company. All Rights Reserved.
-    </footer>
+    <footer>&copy; 2024 Your Company. All Rights Reserved.</footer>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
