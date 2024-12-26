@@ -117,7 +117,7 @@ button {
   border: 1px solid;
   border-radius: 4px;
   margin: 15px;
-  background-color: bisque;
+  background: linear-gradient(to bottom, #6699ff 0%, #ccccff 67%);
 }
 
 #feature img {
