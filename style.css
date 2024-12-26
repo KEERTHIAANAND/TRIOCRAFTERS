@@ -64,7 +64,7 @@ body {
 }
 
 /*Style for hero section*/
-#hero {
+/*#hero {
   display: flex;
   justify-content: space-between;
   margin: 2%;
@@ -75,12 +75,9 @@ body {
   height: 100vh;
   text-align: center;
   border-radius: 50px;
-}
+}*/
 
-#hero #text {
-  padding-left: 10%;
-  padding-top: 15%;
-}
+
 
 #text h1,
 h3,
@@ -112,28 +109,23 @@ button {
 }
 
 #feature .feature-box {
-  width: 400px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   text-align: center;
   padding: 25px 15px;
   box-shadow: 20px 20px 34px rgb(124, 147, 153);
   border: 1px solid;
   border-radius: 4px;
   margin: 15px;
-  background-color: bisque;
+  background: linear-gradient(to bottom, #6699ff 0%, #ccccff 67%);
 }
 
 #feature img {
-  margin-left: 75px;
-  display: block;
+  margin-left: 1px;
+  display:flex;
   margin-bottom: 10px;
-}
-
-#feature h6 {
-  font-size: 100%;
-  font-weight: bolder;
-  background-color: bisqu;
-  display: inline-block;
+  width: 270px;
+  padding: 10px; 
 }
 
 #feature {
@@ -207,23 +199,22 @@ button {
   color: white;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
-  background-color: #1e6a6b;
-  height: 25vh;
+  background: linear-gradient(to right, #944dff 0%, #1a75ff 91%);
+  height: 20vh;
   text-align: center;
-  margin: 3%;
+  margin: 1%;
 }
 
 #newsletter p,
 button {
-  font-size: larger;
+  font-size:23px;
   color: white;
 }
 
 #newsletter input {
   height: 3.125rem;
-  padding: 0 1.25em;
+  padding: 20px;
   font-size: 14px;
   width: 100%;
   border: 1px solid transparent;
@@ -234,16 +225,16 @@ button {
 }
 
 #newsletter .form {
-  display: flex;
-  width: 40%;
+  display:flexbox;
+  width: 600px;
 }
 
 #newsletter button {
-  background-color: #0c8a82;
+  background-color: #a366ff;
   color: rgb(255, 255, 255);
   white-space: nowrap;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  padding: 0px;
+  cursor: pointer;
 }
 
 /*footer style*/
@@ -354,6 +345,7 @@ footer .social-icons {
   color: white;
   font-weight: 600;
 }
+<<<<<<< HEAD
 /* about us style*/
 .header-aboutus .about-header{
   background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
@@ -390,4 +382,17 @@ background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
 }
 .about-app .video video{
   border-radius: 25px;
+=======
+
+#home-banner{
+  background-image: url("assets/home\ banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 14px;
+>>>>>>> 5e26c9e0770118a7c90eac273ed42d69d6d6f27c
 }
