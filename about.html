@@ -1,150 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <style>
-    body {
-      background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+  body {
+    background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
+  }
+
+  .header-aboutus .about-header {
+    background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
+    height: 30vh;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .header-aboutus .about-header {
+    padding-top: 5%;
+  }
+
+  .header-aboutus .about-header h1,
+  h5 {
+    font-weight: bolder;
+    font-size: 50px;
+  }
+
+  .header-aboutus .image img {
+    height: 40vh;
+    width: 25%;
+    border-radius: 25px;
+  }
+
+  .header-aboutus .image {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
+  }
+
+  .header-aboutus .image h2,
+  p {
+    font-size: xx-large;
+    padding-left: 20px;
+  }
+
+  .about-app .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-app .video video {
+    border-radius: 100px;
+  }
+
+  @media (min-width: 478px) and (max-width: 767px) {
+    .header-aboutus {
+      flex-direction: column;
     }
-  </style>
-  <body>
-    <section class="header-aboutus">
-      <div class="about-header">
-        <h1>#Know us</h1>
-        <h5>Awesome deals are waiting for you</h5>
-      </div>
-      <div class="image">
-        <img src="assets/aboutus.jpg" alt="" />
-        <div>
-          <h2>Who we are?</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi in
-            eaque dolores consequatur reprehenderit ipsa vitae et nulla amet?
-            Officia eos quis, libero amet enim, delectus porro praesentium eaque
-            magni dolorem error, ea accusamus dolor? Deleniti, aperiam ea?
-            Fugit, harum corporis sapiente animi quo velit placeat eum
-            cupiditate earum. Mollitia distinctio, animi beatae ducimus
-            accusamus ex illo deleniti vel adipisci quod incidunt neque unde,
-            placeat aperiam? Illum blanditiis ipsum nam omnis odit? Distinctio
-            error voluptatem quam quidem porro nihil totam ex cupiditate numquam
-            dolores quis, assumenda officiis molestiae aperiam provident in non,
-            aspernatur debitis labore id. Labore consequuntur quas debitis quia
-            ipsum quaerat error velit ratione magni mollitia. Obcaecati quasi
-            architecto ut debitis expedita perferendis quas rerum reprehenderit
-            dignissimos neque laborum porro accusamus ea amet suscipit, vero et
-            qui voluptates excepturi reiciendis. Eius necessitatibus repudiandae
-            ipsa tempore laborum, fuga commodi ipsum quaerat quam consectetur
-            quia sequi cumque eveniet voluptatibus blanditiis id repellat
-            voluptate cum ex.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="about-app">
-      <div class="video">
-        <video autoplay loop muted src="assets/aboutus.mp4" controls></video>
-      </div>
-    </section>
-    <section id="feature" class="section1">
-      <div class="feature-box">
-        <img src="assets/features/free delivery.avif" alt="" />
-      </div>
-      <div class="feature-box">
-        <img
-          src="assets/features/24image.jpg"
-          style="margin-left: 10px; width: 250px"
-          alt=""
-        />
-      </div>
-      <div class="feature-box">
-        <img src="assets/features/savemoney.png" alt="" />
-      </div>
-    </section>
-    <section id="newsletter">
+
+    .header-aboutus img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .about-header div {
+      padding-left: 0px;
+    }
+
+    .about-app .video {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .header-aboutus {
+      flex-direction: row;
+    }
+
+    .header-aboutus img {
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .about-header div {
+      padding-left: 20px;
+    }
+
+    .about-app .video {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .header-aboutus {
+      flex-direction: row;
+    }
+
+    .header-aboutus img {
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .about-header div {
+      padding-left: 20px;
+    }
+
+    .about-app .video {
+      width: 50%;
+    }
+  }
+</style>
+
+<body>
+  <section class="header-aboutus">
+    <div class="about-header">
+      <h1>#Know us</h1>
+      <h5>Awesome deals are waiting for you</h5>
+    </div>
+    <div class="image">
+      <img src="assets/aboutus.jpg" alt="" />
       <div>
-        <h4>Sign Up for Future Updates</h4>
+        <h2>Who we are?</h2>
+        <p>
+          Many people find it hard to buy computers, laptops, and
+          similar devices because they don
+          ’t know where to find
+          reliable sellers or compare prices and features easily. On the
+          other hand, sellers struggle to reach the right buyers and sell
+          their products efficiently.
+          This project will create a simple platform where buyers can
+          easily find and compare products, and sellers can connect
+          with customers and sell their devices without hass.This Platform makes it easy to buy and sell
+          computers, laptops, and related products. Buyers can
+          search, compare, and purchase items quickly, while
+          sellers can list their products with clear details and
+          prices to reach more customers.The Platform ensures secure payments, allows buyers
+          to see reviews and ratings and helps sellers manage
+          their inventory and sales easily.
+          It’s a simple, reliable and hassle-free solution for all
+          computer and laptop needs.
+        </p>
       </div>
-      <div class="form">
-        <input
-          type="text"
-          placeholder="Your E-mail address"
-          style="font-size: 20px; width: 400px"
-        />
-        <button class="normal" style="padding: 10px">Sign Up</button>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3>Contact</h3>
-          <p style="font-size: larger">
-            <strong>Address:</strong>No.10,Big Bazaar Street,Bangalore.
-          </p>
-          <p style="font-size: larger">
-            <strong>Phone:</strong> +91 1234567890
-          </p>
-          <p style="font-size: larger"><strong>Hours:</strong> 10:00 - 18:00</p>
-          <div class="Follow">
-            <h4>Follow us</h4>
-            <div class="social-icons">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-youtube"></i>
-              <i class="fa-brands fa-pinterest"></i>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-column">
-          <h3>About</h3>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Delivery Information</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>My Account</h3>
-          <ul>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">View Cart</a></li>
-            <li><a href="#">My Wishlist</a></li>
-            <li><a href="#">Track My Order</a></li>
-            <li><a href="#">Help</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-column">
-          <h3>Install App</h3>
-          <p>From App Store or Google Play</p>
-          <div class="down">
-            <p><strong>Download on</strong></p>
-            <i class="fa-brands fa-app-store"></i>
-            <a href="#" class="app-link">App Store </a><br />
-            <p><strong>Download on</strong></p>
-            <i class="fa-brands fa-google-play"></i>
-            <a href="#" class="app-link">Google Play</a><br /><br />
-
-            <p>Secured Payment Gateways</p>
-            <div class="social-icons">
-              <i class="fa-brands fa-google-pay"></i>
-              <i class="fa-brands fa-cc-paypal"></i>
-              <i class="fa-brands fa-apple-pay"></i>
-            </div>
+    </div>
+  </section>
+  <section class="about-app">
+    <div class="video">
+      <video autoplay loop muted src="assets/aboutus.mp4" controls></video>
+    </div>
+  </section>
+  <section id="feature" class="section1">
+    <div class="feature-box">
+      <img src="assets/features/free delivery.avif" alt="" />
+    </div>
+    <div class="feature-box">
+      <img src="assets/features/24image.jpg" style="margin-left: 10px; width: 250px" alt="" />
+    </div>
+    <div class="feature-box">
+      <img src="assets/features/savemoney.png" alt="" />
+    </div>
+  </section>
+  <section id="newsletter">
+    <div>
+      <h4>Sign Up for Future Updates</h4>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your E-mail address" style="font-size: 20px; width: 400px" />
+      <button class="normal" style="padding: 10px">Sign Up</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p style="font-size: larger">
+          <strong>Address:</strong>No.10,Big Bazaar Street,Bangalore.
+        </p>
+        <p style="font-size: larger">
+          <strong>Phone:</strong> +91 1234567890
+        </p>
+        <p style="font-size: larger"><strong>Hours:</strong> 10:00 - 18:00</p>
+        <div class="Follow">
+          <h4>Follow us</h4>
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2021, tech2 etc. HTML, CC Ecommerce Template</p>
+
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+
+      <div class="footer-column">
+        <h3>My Account</h3>
+        <ul>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="#">View Cart</a></li>
+          <li><a href="#">My Wishlist</a></li>
+          <li><a href="#">Track My Order</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Install App</h3>
+        <p>From App Store or Google Play</p>
+        <div class="down">
+          <p><strong>Download on</strong></p>
+          <i class="fa-brands fa-app-store"></i>
+          <a href="#" class="app-link">App Store </a><br />
+          <p><strong>Download on</strong></p>
+          <i class="fa-brands fa-google-play"></i>
+          <a href="#" class="app-link">Google Play</a><br /><br />
+
+          <p>Secured Payment Gateways</p>
+          <div class="social-icons">
+            <i class="fa-brands fa-google-pay"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2021, tech2 etc. HTML, CC Ecommerce Template</p>
+    </div>
+  </footer>
+</body>
+
 </html>
