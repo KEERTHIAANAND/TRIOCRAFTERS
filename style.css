@@ -122,10 +122,10 @@ button {
 
 #feature img {
   margin-left: 1px;
-  display:flex;
+  display: flex;
   margin-bottom: 10px;
   width: 270px;
-  padding: 10px; 
+  padding: 10px;
 }
 
 #feature {
@@ -208,7 +208,7 @@ button {
 
 #newsletter p,
 button {
-  font-size:23px;
+  font-size: 23px;
   color: white;
 }
 
@@ -225,7 +225,7 @@ button {
 }
 
 #newsletter .form {
-  display:flexbox;
+  display: flexbox;
   width: 600px;
 }
 
@@ -316,7 +316,7 @@ footer .social-icons {
 }
 
 /* shop page style*/
-#page-header{
+#page-header {
   background-image: url("assets/shop\ banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -329,15 +329,15 @@ footer .social-icons {
 }
 
 #page-header h2,
-#page-header p{
+#page-header p {
   color: black;
 }
 
-#pagination{
+#pagination {
   text-align: center;
 }
 
-#pagination a{
+#pagination a {
   text-decoration: none;
   background-color: darkcyan;
   padding: 15px 20px;
@@ -346,7 +346,7 @@ footer .social-icons {
   font-weight: 600;
 }
 
-#home-banner{
+#home-banner {
   background-image: url("assets/home\ banner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -356,5 +356,51 @@ footer .social-icons {
   text-align: center;
   flex-direction: column;
   padding: 14px;
+
 }
 
+@media (min-width: 478px) and (max-width: 767px) {
+  .header-aboutus {
+    flex-direction: column;
+  }
+  .header-aboutus img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-header div {
+    padding-left: 0px;
+  }
+  .about-app .video {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-aboutus {
+    flex-direction: row;
+  }
+  .header-aboutus img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .about-header div {
+    padding-left: 20px;
+  }
+  .about-app .video {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .header-aboutus {
+    flex-direction: row;
+  }
+  .header-aboutus img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .about-header div {
+    padding-left: 20px;
+  }
+  .about-app .video {
+    width: 50%;
+  }
+}
