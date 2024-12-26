@@ -354,3 +354,40 @@ footer .social-icons {
   color: white;
   font-weight: 600;
 }
+/* about us style*/
+.header-aboutus .about-header{
+  background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
+  height:30vh;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  
+}
+.header-aboutus .about-header{
+  padding-top: 5%;
+}
+.header-aboutus .about-header h1,h5{
+  font-weight: bolder;
+  font-size: 50px;
+}
+.header-aboutus .image img{
+  height:40vh;
+  width: 25%;
+  border-radius: 25px;
+}
+.header-aboutus .image {
+  display: flex;
+  padding: 20px;
+  background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
+ }
+.header-aboutus .image h2,p{
+  font-size: xx-large;
+  padding-left: 20px;
+}
+.about-app .video{
+margin-top: 30px ;
+margin-left: 8%;
+background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
+}
+.about-app .video video{
+  border-radius: 25px;
+}
