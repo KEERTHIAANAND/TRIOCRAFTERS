@@ -125,7 +125,7 @@ button {
   display:flex;
   margin-bottom: 10px;
   width: 270px;
-  padding: 10px;
+  padding: 10px; 
 }
 
 #feature {
