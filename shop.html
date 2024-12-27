@@ -9,6 +9,22 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+        .product-container .product {
+            border: 1px solid;
+            background: linear-gradient(to top, #666699 0%, #ffffff 100%);
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            width: 500px;
+            height: 120vh;
+            cursor: pointer;
+            transition: 0.2s ease;
+            position: relative;
+            box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
+            margin: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,9 +52,9 @@
     </section>
 
     <section id="product1" class="section1">
-        <h2 style="background-color: aliceblue; width: 125px; padding: 10px;">LAPTOPS</h2>
+        <h2 style="background-color: aliceblue; width: 125px; padding: 10px;border-radius: 10px;">LAPTOPS</h2>
         <div class="product-container">
-            <div class="product">
+            <div class="product" id="item1" style="height: 100vh;">
                 <img src="products/hp.png" width="400px" alt="" />
                 <div class="des">
                     <span>HP</span>
@@ -51,10 +67,12 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.45000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
 
-            <div class="product">
+            <div class="product" id="item2" style="height: 100vh;">
                 <img src="products/asus.png" width="400px" alt="" />
                 <div class="des">
                     <span>ASUS</span>
@@ -67,8 +85,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.35000</h5>
                 </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer; border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 100vh;">
                 <img src="products/dell lap.png" width="400px" alt="" />
                 <div class="des">
                     <span>DELL</span>
@@ -82,8 +103,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.69,000</h5>
                 </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 100vh;">
                 <img src="products/asus.png" width="400px" alt="" />
                 <div class="des">
                     <span>ASUS</span>
@@ -96,6 +120,9 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.35000</h5>
                 </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
         </div>
         </div>
@@ -103,9 +130,9 @@
     </section>
 
     <section id="product1" class="section1">
-        <h2 style="background-color: aliceblue; width: 150px; padding: 10px;">MONITORS</h2>
+        <h2 style="background-color: aliceblue; width: 150px; padding: 10px;border-radius: 10px;">MONITORS</h2>
         <div class="product-container">
-            <div class="product">
+            <div class="product" style="height: 90vh;">
                 <img src="products/hp monitor.png" width="400px" alt="" />
                 <div class="des">
                     <span>HP</span>
@@ -118,9 +145,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.25000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 90vh;">
                 <img src="products/acer monitor.png" width="400px" alt="" />
                 <div class="des">
                     <span>ACER</span>
@@ -134,9 +163,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.30000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 95vh;">
                 <img src="products/lg monitor.png" width="400px" alt="" />
                 <div class="des">
                     <span>LG</span>
@@ -150,9 +181,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.6000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 95vh;">
                 <img src="products/lenovo monitor.png" width="400px" alt="" />
                 <div class="des">
                     <span>LENOVO</span>
@@ -166,15 +199,17 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.17,500</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
 
     </section>
 
     <section id="product1" class="section1">
-        <h2 style="background-color: aliceblue; width: 180px; padding: 10px;">HEADPHONES</h2>
+        <h2 style="background-color: aliceblue; width: 180px; padding: 10px;border-radius: 10px;">HEADPHONES</h2>
         <div class="product-container">
-            <div class="product">
+            <div class="product" style="height: 110vh;">
                 <img src="products/zebronics headphone.png" width="400px" alt="" />
                 <div class="des">
                     <span>ZEBRONICS</span>
@@ -187,9 +222,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.2,200</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 110vh;">
                 <img src="products/noise headphone.png" width="400px" alt="" />
                 <div class="des">
                     <span>NOISE</span>
@@ -202,9 +239,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.2,000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 110vh;">
                 <img src="products/jbl headphone.png" width="400px" alt="" />
                 <div class="des">
                     <span>JBL</span>
@@ -217,9 +256,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.6000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 110vh;">
                 <img src="products/sony headphone.png" width="400px" alt="" />
                 <div class="des">
                     <span>SONY</span>
@@ -231,15 +272,17 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.3,990</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
 
     </section>
 
     <section id="product1" class="section1">
-        <h2 style="background-color: aliceblue; width: 145px; padding: 10px;">SPEAKERS</h2>
+        <h2 style="background-color: aliceblue; width: 145px; padding: 10px; border-radius: 10px;">SPEAKERS</h2>
         <div class="product-container">
-            <div class="product">
+            <div class="product" style="height: 90vh;">
                 <img src="products/boat speaker.png" width="400px" alt="" />
                 <div class="des">
                     <span>BOAT</span>
@@ -253,9 +296,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.1,200</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 90vh;">
                 <img src="products/zebronics speaker.png" width="400px" alt="" />
                 <div class="des">
                     <span>ZEBRONICS</span>
@@ -268,9 +313,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.700</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 100vh;">
                 <img src="products/jbl speaker.png" width="400px" alt="" />
                 <div class="des">
                     <span>JBL</span>
@@ -283,9 +330,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.2,500</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 100vh;">
                 <img src="products/mivi speaker.png" width="400px" alt="" />
                 <div class="des">
                     <span>MIVI</span>
@@ -298,15 +347,17 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.800</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
 
     </section>
 
     <section id="product1" class="section1">
-        <h1 style="background-color: aliceblue; width: 135px; padding: 10px;">WATCHES</h1>
+        <h1 style="background-color: aliceblue; width: 135px; padding: 10px;border-radius: 10px;">WATCHES</h1>
         <div class="product-container">
-            <div class="product">
+            <div class="product" style="height: 115vh;">
                 <img src="products/boat watch.png" width="400px" alt="" />
                 <div class="des">
                     <span>BOAT</span>
@@ -320,9 +371,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.1,400</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 115vh;">
                 <img src="products/noise watch.png" width="400px" alt="" />
                 <div class="des">
                     <span>NOISE</span>
@@ -336,9 +389,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.1,200</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 120vh;">
                 <img src="products/firebolt watch.png" width="400px" alt="" />
                 <div class="des">
                     <span>FIRE-BOLT</span>
@@ -351,9 +406,11 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.1,000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
+            <div class="product" style="height: 120vh;">
                 <img src="products/amazefit watch.png" width="400px" alt="" />
                 <div class="des">
                     <span>AMAZEFIT</span>
@@ -367,7 +424,9 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.2,500</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
 
     </section>
