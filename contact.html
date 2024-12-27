@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f9f9f9;
             color: #333;
         }
 
+        .logo {
+            border-radius: 25px;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: aliceblue;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.3s ease;
+            font-size: 25px;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active {
+            color: #088178;
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+
         .hero {
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?contact,office');
+            background-color: #333;
             background-size: cover;
             background-position: center;
             height: 60vh;
@@ -57,7 +112,7 @@
 
         .contact-card i {
             font-size: 2em;
-            color: #007BFF;
+            color: #007bff;
             margin-bottom: 10px;
         }
 
@@ -71,10 +126,63 @@
             cursor: pointer;
         }
 
-        .contact-card p:hover{
-            
-            color:rgb(255, 0, 0);
-           }
+        .contact-card p:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        #navbar li a:hover,
+        #navbar li a.active {
+            color: #088178;
+        }
+
+        #navbar li a.active::after,
+        #navbar li a:hover::after {
+            content: "";
+            width: 30%;
+            height: 2px;
+            background: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: aliceblue;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.3s ease;
+            font-size: 25px;
+        }
 
         .form-section {
             background: #ffffff;
@@ -97,10 +205,10 @@
             display: block;
             margin-bottom: 5px;
             font-weight: bold;
-            
         }
 
-        .form-group input, .form-group textarea {
+        .form-group input,
+        .form-group textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -110,7 +218,7 @@
         .form-group button {
             width: 100%;
             padding: 10px;
-            background-color: #007BFF;
+            background-color: #007bff;
             color: white;
             border: none;
             border-radius: 4px;
@@ -126,12 +234,29 @@
             text-align: center;
             padding: 20px;
             background-color: #333;
-            color:white;
+            color: white;
             margin-top: 40px;
         }
     </style>
 </head>
+
+
+
 <body>
+    <section id="header">
+        <a href="#"><img src="assets/logo.png.jpg" class="logo" width="200px" /></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li>
+                    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </div>
+    </section>
     <div class="hero">
         <div>
             <h1>Contact Us</h1>
@@ -144,17 +269,17 @@
             <div class="contact-card">
                 <i class="fas fa-map-marker-alt"></i>
                 <h3>Our Location</h3>
-                <p>123 Main Street, Anytown, USA</p>
+                <p>123 Main Street, Chennai,India</p>
             </div>
             <div class="contact-card">
                 <i class="fas fa-phone"></i>
                 <h3>Call Us</h3>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 1234567890</p>
             </div>
             <div class="contact-card">
                 <i class="fas fa-envelope"></i>
                 <h3>Email Us</h3>
-                <p>contact@yourcompany.com</p>
+                <p>contact@gadat1.com</p>
             </div>
         </div>
 
@@ -163,11 +288,11 @@
             <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required />
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required />
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
@@ -180,9 +305,7 @@
         </div>
     </div>
 
-    <footer>
-        &copy; 2024 Your Company. All Rights Reserved.
-    </footer>
+    <footer>&copy; 2024 Your Company. All Rights Reserved.</footer>
 
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     
@@ -209,4 +332,5 @@
         });
     </script>
 </body>
+
 </html>

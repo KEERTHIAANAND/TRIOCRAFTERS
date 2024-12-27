@@ -13,6 +13,8 @@
 body {
   width: 100%;
   background: linear-gradient(to top right, #669999 0%, #666699 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
 }
 
 /*Style for header*/
@@ -122,10 +124,10 @@ button {
 
 #feature img {
   margin-left: 1px;
-  display:flex;
+  display: flex;
   margin-bottom: 10px;
   width: 270px;
-  padding: 10px; 
+  padding: 10px;
 }
 
 #feature {
@@ -148,13 +150,13 @@ button {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
-  width: 22%;
-  height: 100%;
+  width: 500px;
+  height: 62vh;
   cursor: pointer;
   transition: 0.2s ease;
   position: relative;
   box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
-  margin-bottom: 5%;
+  margin: 15px;
 }
 
 .product-container :hover {
@@ -182,7 +184,7 @@ button {
   line-height: 50px;
   border: 1px solid;
   color: #088178;
-  position: absolute;
+
   top: 285px;
   left: 350px;
   padding-left: 2x;
@@ -208,7 +210,7 @@ button {
 
 #newsletter p,
 button {
-  font-size:23px;
+  font-size: 23px;
   color: white;
 }
 
@@ -225,7 +227,7 @@ button {
 }
 
 #newsletter .form {
-  display:flexbox;
+  display: flexbox;
   width: 600px;
 }
 
@@ -316,12 +318,12 @@ footer .social-icons {
 }
 
 /* shop page style*/
-#page-header{
+#page-header {
   background-image: url("assets/shop\ banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -329,15 +331,15 @@ footer .social-icons {
 }
 
 #page-header h2,
-#page-header p{
+#page-header p {
   color: black;
 }
 
-#pagination{
+#pagination {
   text-align: center;
 }
 
-#pagination a{
+#pagination a {
   text-decoration: none;
   background-color: darkcyan;
   padding: 15px 20px;
@@ -345,46 +347,8 @@ footer .social-icons {
   color: white;
   font-weight: 600;
 }
-<<<<<<< HEAD
-/* about us style*/
-.header-aboutus .about-header{
-  background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
-  height:30vh;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  
-}
-.header-aboutus .about-header{
-  padding-top: 5%;
-}
-.header-aboutus .about-header h1,h5{
-  font-weight: bolder;
-  font-size: 50px;
-}
-.header-aboutus .image img{
-  height:40vh;
-  width: 25%;
-  border-radius: 25px;
-}
-.header-aboutus .image {
-  display: flex;
-  padding: 20px;
-  background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
- }
-.header-aboutus .image h2,p{
-  font-size: xx-large;
-  padding-left: 20px;
-}
-.about-app .video{
-margin-top: 30px ;
-margin-left: 8%;
-background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
-}
-.about-app .video video{
-  border-radius: 25px;
-}
 
-#home-banner{
+#home-banner {
   background-image: url("assets/home\ banner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -394,5 +358,62 @@ background: linear-gradient(to top, #a74cd4 0%, #cb9ee5 100%);
   text-align: center;
   flex-direction: column;
   padding: 14px;
->>>>>>> 5e26c9e0770118a7c90eac273ed42d69d6d6f27c
+
+}
+
+@media (min-width: 478px) and (max-width: 767px) {
+  .header-aboutus {
+    flex-direction: column;
+  }
+
+  .header-aboutus img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-header div {
+    padding-left: 0px;
+  }
+
+  .about-app .video {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-aboutus {
+    flex-direction: row;
+  }
+
+  .header-aboutus img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .about-header div {
+    padding-left: 20px;
+  }
+
+  .about-app .video {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-aboutus {
+    flex-direction: row;
+  }
+
+  .header-aboutus img {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .about-header div {
+    padding-left: 20px;
+  }
+
+  .about-app .video {
+    width: 50%;
+  }
 }

@@ -9,6 +9,22 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+        .product-container .product {
+            border: 1px solid;
+            background: linear-gradient(to top, #666699 0%, #ffffff 100%);
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            width: 500px;
+            height: 120vh;
+            cursor: pointer;
+            transition: 0.2s ease;
+            position: relative;
+            box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.1);
+            margin: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,10 +52,10 @@
     </section>
 
     <section id="product1" class="section1">
-        <h2>LAPTOPS</h2>
+        <h2 style="background-color: aliceblue; width: 125px; padding: 10px;border-radius: 10px;">LAPTOPS</h2>
         <div class="product-container">
-            <div class="product">
-                <img src="products/hp.png" width="270px" alt="" />
+            <div class="product" id="item1" style="height: 100vh;">
+                <img src="products/hp.png" width="400px" alt="" />
                 <div class="des">
                     <span>HP</span>
                     <h5>HP Laptop 15s, 12th Gen Intel Core i3, 15.6-inch (39.6 cm), 8GB DDR4, 512GB SSD, Thin & Light,
@@ -51,10 +67,13 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.45000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
-                <img src="products/asus.png" width="270px" alt="" />
+
+            <div class="product" id="item2" style="height: 100vh;">
+                <img src="products/asus.png" width="400px" alt="" />
                 <div class="des">
                     <span>ASUS</span>
                     <h5>ASUS Vivobook 16, IntelCore™ i3-1215U 12th Gen, Thin and Light Laptop, 16-inch (40.64 cm) FHD+,
@@ -66,107 +85,55 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.35000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer; border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
-                <img src="products/hp monitor.png" width="270px" alt="" />
+            <div class="product" style="height: 100vh;">
+                <img src="products/dell lap.png" width="400px" alt="" />
                 <div class="des">
-                    <span>HP</span>
-                    <h5>HP Series 5 27 inch FHD Monitor - 527sf, 27inch(68.6 cm),FHD(1920 x 1080),300 nits,Anti-Glare,
-                        Eye Ease,3.2kg</h5>
+                    <span>DELL</span>
+                    <h5>Dell Inspiron 3530 Laptop, 13th Generation Intel Core i7-1355U Processor, 16GB, 512GB, 15.6"
+                        (39.62cm) FHD 120Hz Display, Backlit KB, Windows 11 + MSO'21, 15 Month McAfee, Silver, Thin
+                        & Light-1.62kg</h5>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
-                    <h5>Rs.25000</h5>
+                    <h5>Rs.69,000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
-                <img src="products/acer monitor.png" width="270px" alt="" />
-                <div class="des">
-                    <span>ACER</span>
-                    <h5>Acer SA272E 27 Inch Full HD IPS Ultra Slim (7.2mm Thick) Backlight LED LCD Monitor I Zero Frame
-                        I 100Hz Refresh I 1 MS VRB I AMD Free Sync I 1xHDMI 1xVGA I Stereo Speakers I Eye Care I White
-                    </h5>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <h5>Rs.30000</h5>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product">
-                <img src="products/asus monitor.png" width="270px" alt="" />
+            <div class="product" style="height: 100vh;">
+                <img src="products/asus.png" width="400px" alt="" />
                 <div class="des">
                     <span>ASUS</span>
-                    <h5>ASUS VA24EHF Eye Care Gaming Monitor 24-inch (23.8-inch viewable), IPS, Full HD, Frameless,
-                        100Hz, Adaptive-Sync, 1ms MPRT, HDMI, Low Blue Light, Flicker Free, Wall Mountable</h5>
+                    <h5>ASUS Vivobook 16, IntelCore™ i3-1215U 12th Gen, Thin and Light Laptop, 16-inch (40.64 cm) FHD+,
+                        (8 GB RAM/512GB SSD/Windows 11/Fingerprint/Black/1.88kg), X1605ZAB-MB322WS</h5>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <i class="fa-regular fa-star"></i>
-                    <h5>Rs.15000</h5>
+                    <h5>Rs.35000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product">
-                <img src="products/asus mouse.png" width="270px" alt="" />
-                <div class="des">
-                    <span>ASUS</span>
-                    <h5>ASUS WT300 Wireless Ergonomic USB Mouse, Ambidextrous Design, Up to 1600 Dpi, Compact &
-                        Lighweight Mouse,2.4GHz Nano Dongle, Up to 15 Months of Battery Life - Black</h5>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <h5>Rs.500</h5>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product">
-                <img src="products/asus keyboard.png" width="270px" alt="" />
-                <div class="des">
-                    <span>ASUS</span>
-                    <h5>ASUS Marshmallow Kw100 Keyboard, Supports Up to 3 Devices, 1.6Mm Key Travel, Scissor Keys,
-                        Compact & Lightweight Keyboard, Bluetooth (Color - Green Tea Latte)</h5>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <h5>Rs.1000</h5>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
-            </div>
-            <div class="product">
-                <img src="products/acer mouse.png" width="270px" alt="" />
-                <div class="des">
-                    <span>ACER</span>
-                    <h5>Acer Predator Cestus 327 Multi-Grip Design Wired Gaming Mouse (8000 DPI/150 IPS/6
-                        Buttons/5-level DPI Settings with 5 LED Color/ELAN OM36 Sensor/1000Hz Polling Rate) with 20M
-                        Click Lifespan, Black</h5>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <h5>Rs.1000</h5>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
         </div>
+        </div>
+        </div>
     </section>
+
     <section id="product1" class="section1">
-        <h2>Monitors</h2>
+        <h2 style="background-color: aliceblue; width: 150px; padding: 10px;border-radius: 10px;">MONITORS</h2>
         <div class="product-container">
-            <div class="product">
-                <img src="products/hp monitor.png" width="270px" alt="" />
+            <div class="product" style="height: 90vh;">
+                <img src="products/hp monitor.png" width="400px" alt="" />
                 <div class="des">
                     <span>HP</span>
                     <h5>HP Series 5 27 inch FHD Monitor - 527sf, 27inch(68.6 cm),FHD(1920 x 1080),300 nits,Anti-Glare,
@@ -178,10 +145,12 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.25000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            <div class="product">
-                <img src="products/acer monitor.png" width="270px" alt="" />
+            <div class="product" style="height: 90vh;">
+                <img src="products/acer monitor.png" width="400px" alt="" />
                 <div class="des">
                     <span>ACER</span>
                     <h5>Acer SA272E 27 Inch Full HD IPS Ultra Slim (7.2mm Thick) Backlight LED LCD Monitor I Zero Frame
@@ -194,28 +163,283 @@
                     <i class="fa-regular fa-star"></i>
                     <h5>Rs.30000</h5>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
             </div>
-            
-        </div>
+            <div class="product" style="height: 95vh;">
+                <img src="products/lg monitor.png" width="400px" alt="" />
+                <div class="des">
+                    <span>LG</span>
+                    <h5>LG 22 Inch (55cm) FHD Monitor 1920 x 1080, AMD FreeSync, VA, 100Hz, sRGB 99% Typ(CIE1931), Black
+                        Stabilizer, Virtual Borderless, Flicker Safe, Reader Mode, OnScreen Control, HDMI,VGA,
+                        22MR410(Black)</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.6000</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 95vh;">
+                <img src="products/lenovo monitor.png" width="400px" alt="" />
+                <div class="des">
+                    <span>LENOVO</span>
+                    <h5>Lenovo Legion R27fc-30 | 27 Inch (68.58cm) FHD 240Hz Gaming Monitor | 0.5ms, AMD FreeSync &
+                        NVDIA G-Sync , 99%sRGB, Speaker, 2xHDMI, 1xDP| Tilt, Swivel, Pivot, Height Adjust Stand | Black
+                        | 67B6GAC1IN</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.17,500</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
 
     </section>
 
-    <section id="pagination" class="section-p1">
-        <a href="" #>1</a>
-        <a href="" #>2</a>
-        <a href="" #><i class="fal fa-long-arrow-alt-right"></i></a>
+    <section id="product1" class="section1">
+        <h2 style="background-color: aliceblue; width: 180px; padding: 10px;border-radius: 10px;">HEADPHONES</h2>
+        <div class="product-container">
+            <div class="product" style="height: 110vh;">
+                <img src="products/zebronics headphone.png" width="400px" alt="" />
+                <div class="des">
+                    <span>ZEBRONICS</span>
+                    <h5>ZEBRONICS Zeb-Dynamic with Bluetooth Supporting Over Ear Headphone, Aux Input, Call Function and
+                        Media/Volume Control | Voice Assistant Support (Red)</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.2,200</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 110vh;">
+                <img src="products/noise headphone.png" width="400px" alt="" />
+                <div class="des">
+                    <span>NOISE</span>
+                    <h5>Noise 3 Wireless On-Ear Headphones with 70H Playtime, 40mm Driver, Low Latency(up to 45ms),Dual
+                        Pairing, BT v5.3 (Midnight Blue)</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.2,000</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 110vh;">
+                <img src="products/jbl headphone.png" width="400px" alt="" />
+                <div class="des">
+                    <span>JBL</span>
+                    <h5>JBL Tune 510BT, On Ear Wireless Headphones with Mic, up to 40 Hours Playtime, Pure Bass, Quick
+                        Charging, Dual Pairing, Bluetooth 5.0 & Voice Assistant Support for Mobile Phones (Black)</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.6000</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 110vh;">
+                <img src="products/sony headphone.png" width="400px" alt="" />
+                <div class="des">
+                    <span>SONY</span>
+                    <h5>Sony WH-CH520 Wireless Bluetooth Headphones with Mic, Up to 50Hrs Battery-Blue</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.3,990</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+
+    </section>
+
+    <section id="product1" class="section1">
+        <h2 style="background-color: aliceblue; width: 145px; padding: 10px; border-radius: 10px;">SPEAKERS</h2>
+        <div class="product-container">
+            <div class="product" style="height: 90vh;">
+                <img src="products/boat speaker.png" width="400px" alt="" />
+                <div class="des">
+                    <span>BOAT</span>
+                    <h5>boAt Aavante Bar 490 10W Signature Sound, Dual Full-Range Drivers,7 HRS Battery, Built-in
+                        Mic,2.0 CH, TWS Feature,Multi Connect, Bluetooth Sound Bar, Soundbar Speaker (Classic Black)
+                    </h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.1,200</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 90vh;">
+                <img src="products/zebronics speaker.png" width="400px" alt="" />
+                <div class="des">
+                    <span>ZEBRONICS</span>
+                    <h5>Zebronics Zeb-Warrior 2.0 Multimedia Speaker With Aux Connectivity,USB Powered And Volume
+                        Control, Frequency response 120Hz- 15kHz</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.700</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 100vh;">
+                <img src="products/jbl speaker.png" width="400px" alt="" />
+                <div class="des">
+                    <span>JBL</span>
+                    <h5>JBL Go 3, Wireless Ultra Portable Bluetooth Speaker, Pro Sound, Vibrant Colors with Rugged
+                        Fabric Design, Waterproof, Type C (Without Mic, Blue)</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.2,500</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 100vh;">
+                <img src="products/mivi speaker.png" width="400px" alt="" />
+                <div class="des">
+                    <span>MIVI</span>
+                    <h5>Mivi Play Bluetooth Speaker with 12 Hours Playtime. Wireless Speaker Made in India with
+                        Exceptional Sound Quality</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.800</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+
+    </section>
+
+    <section id="product1" class="section1">
+        <h1 style="background-color: aliceblue; width: 135px; padding: 10px;border-radius: 10px;">WATCHES</h1>
+        <div class="product-container">
+            <div class="product" style="height: 115vh;">
+                <img src="products/boat watch.png" width="400px" alt="" />
+                <div class="des">
+                    <span>BOAT</span>
+                    <h5>Boult Newly Launched Crown Smart Watch 1.95'' Display, Bluetooth Calling, Working Crown, Zinc
+                        Alloy Frame, 900 Nits Brightness, AI Voice Assistant, SpO2 Monitoring, 100+ Sports Mode (Blue)
+                    </h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.1,400</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 115vh;">
+                <img src="products/noise watch.png" width="400px" alt="" />
+                <div class="des">
+                    <span>NOISE</span>
+                    <h5>Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38" TFT Display, up-to 7 Days
+                        Battery, 100+ Watch Faces, IP68, Heart Rate Monitor,Includes:‎‎Smartwatch, Magnetic Charger,
+                        User Manual, Warranty Card Sleep Tracking (Jet Black)</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.1,200</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 120vh;">
+                <img src="products/firebolt watch.png" width="400px" alt="" />
+                <div class="des">
+                    <span>FIRE-BOLT</span>
+                    <h5>Fire-Boltt Ninja Call Pro Plus 46.48mm (1.83 inch) Smart Watch with Bluetooth Calling, AI Voice
+                        Assistance, 120 Sports Modes IP67 Rating, 240 * 280 Pixel High Resolution (Black)</h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.1,000</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+            <div class="product" style="height: 120vh;">
+                <img src="products/amazefit watch.png" width="400px" alt="" />
+                <div class="des">
+                    <span>AMAZEFIT</span>
+                    <h5>Amazfit Bip 5 Unity 46mm Smartwatch, Bluetooth Phone Calling, 120+ Sports Modes, 11-Day Battery,
+                        Watch Face, 24 Hour Health Monitoring, 1.91" High-Resolution Display, Android/iOS (Charcoal)
+                    </h5>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <h5>Rs.2,500</h5>
+                </div>
+                <button
+                    style="padding: 10px; background-color: aquamarine; color: black; cursor: pointer;border-radius: 10px;">Add
+                    To Cart</button>
+            </div>
+
     </section>
 
     <section id="newsletter">
         <div>
-          <h4>Sign Up for Future Updates</h4>
+            <h4>Sign Up for Future Updates</h4>
         </div>
         <div class="form">
-          <input type="text" placeholder="Your E-mail address" style="font-size: 20px; width: 400px;" />
-          <button class="normal" style="padding: 10px;">Sign Up</button>
+            <input type="text" placeholder="Your E-mail address" style="font-size: 20px; width: 400px;" />
+            <button class="normal" style="padding: 10px;">Sign Up</button>
         </div>
-      </section>
+    </section>
 
     <footer class="footer">
         <div class="footer-container">
