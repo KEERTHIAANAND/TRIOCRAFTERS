@@ -240,6 +240,48 @@
 
 
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navbarLinks = document.querySelectorAll("#navbar li a");
+      const currentPath = window.location.pathname;
+    
+      navbarLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPath) {
+          link.classList.add("active");
+        } else {
+          link.classList.remove("active");
+        }
+      });
+    });
+    
+    
+    document.querySelector(".form button.normal").addEventListener("click", () => {
+      const emailInput = document.querySelector("input[placeholder='Your E-mail address']");
+      const email = emailInput.value.trim();
+    
+      if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        emailInput.focus();
+      } else {
+        alert("Thank you for signing up for future updates!");
+        emailInput.value = ""; 
+      }
+    });
+    
+    
+    function validateEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    
+    
+    const cartButtons = document.querySelectorAll(".fa-cart-shopping.cart");
+    cartButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        alert("Item added to the cart!");
+      });
+    });
+    </script>
 </body>
 
 </html>
